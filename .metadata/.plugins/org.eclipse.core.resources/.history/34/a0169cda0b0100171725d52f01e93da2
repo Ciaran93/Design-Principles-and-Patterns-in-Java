@@ -1,0 +1,23 @@
+package Singleton;
+
+public class WirelessSensorFactory implements ISensorFactory {
+	
+	private static WirelessSensorFactory sensorFactory;
+	
+	private WirelessSensorFactory(){
+		System.out.println("WIRELESS sensor factory");
+		sensorFactory = this;
+	}
+
+	@Override
+	public IDoorSensor createDoorSensor() {
+		System.out.println("Create WIRELESS door sensor");
+		return new WirelessDoorSenseor();
+	}
+
+	@Override
+	public IHeaterSensor createHeaterSensor() {
+		System.out.println("Create WIRELESS heater sensor");
+		return new WirelessHeaterSensor();
+	}
+}

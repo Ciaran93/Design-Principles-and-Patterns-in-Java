@@ -1,0 +1,35 @@
+package Builder;
+
+public class OldRobotBuilder implements RobotBuilder {
+	
+	private Robot robot;
+	
+	public OldRobotBuilder(){
+		this.robot = new Robot();
+	}
+
+	@Override
+	public void buildRobotHead() {
+		
+		
+	}
+
+	@Override
+	public void buildRobotTorso() {
+		
+		
+	}
+
+	@Override
+	public void buildRobotArms() {
+		
+		
+	}
+
+	@Override
+	public void buildRobotLegs() {
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package DerekAbstractFactoryPattern;
+
+public class EnemyShipFactory {
+	
+	
+	
+	
+	public void makeEnemyShip(){
+		
+	}
+
+}

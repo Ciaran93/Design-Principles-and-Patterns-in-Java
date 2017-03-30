@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+C:\Users\ciaran\Google Drive\Software Engineering\Software Design Patterns\.metadata\.plugins\org.eclipse.jdt.core
+2783195863.index
+3538092609.index

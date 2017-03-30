@@ -1,0 +1,8 @@
+package Singleton;
+
+public class WirelessHeaterSensor implements IHeaterSensor{
+
+	public void measure(){
+		System.out.println("Wireless heater started");
+	}
+}

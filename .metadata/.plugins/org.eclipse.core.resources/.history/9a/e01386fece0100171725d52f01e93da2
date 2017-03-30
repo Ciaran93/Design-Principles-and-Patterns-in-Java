@@ -1,0 +1,21 @@
+package LabFactMeth;
+
+public class AutoSuperSkyTelescope implements Telescope {
+
+	
+	private SkyCoordinates coords;
+	private String view;
+	
+	@Override
+	public void setCoordinates(SkyCoordinates coordinates) {
+		coords = coordinates;
+		
+	}
+
+	@Override
+	public String showView() {
+		view = "AnySuperSkyTelescope showing the view of coordinates: \n\t" + coords.toString();
+		return view;
+	}
+
+}

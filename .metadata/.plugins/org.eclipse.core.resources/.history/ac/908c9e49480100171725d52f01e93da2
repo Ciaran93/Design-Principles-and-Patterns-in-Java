@@ -1,0 +1,19 @@
+package FactoryMethod;
+
+public class FactoryMeth {
+
+	
+	public EnemyShip createShip(String option){
+		
+		if(option.equals("U")){
+			ship = new UFOEnemyShip();
+			displayDetails(ship);
+		} else 
+			if(option.equals("R")){
+				System.out.println("IN HERE2");
+				ship = new RocketShip();
+				displayDetails(ship);
+		}
+		
+	}
+}

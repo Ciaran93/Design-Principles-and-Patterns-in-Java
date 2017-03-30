@@ -1,0 +1,15 @@
+package LabFactMeth;
+
+public class runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AutoTelescopeFactory factory = new AutoTelescopeFactory();
+		Telescope telescope;
+		
+		telescope = factory.createTelescope("any");
+		telescope.showView();
+	}
+
+}

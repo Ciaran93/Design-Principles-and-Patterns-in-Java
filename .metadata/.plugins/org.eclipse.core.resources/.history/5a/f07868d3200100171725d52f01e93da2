@@ -1,0 +1,10 @@
+package Factories;
+
+public class HomeAstronomer {
+
+	public void start(String type, SkyCoordinates coor) {
+		Telescope localTelescope = new AnySkyPlusTelescope();
+		localTelescope.setCoordinates(coor);
+		localTelescope.System.out.println(localTelescope.showView());
+	}
+}

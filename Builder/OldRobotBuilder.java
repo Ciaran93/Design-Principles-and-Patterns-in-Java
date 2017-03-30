@@ -1,0 +1,41 @@
+package Builder;
+
+public class OldRobotBuilder implements RobotBuilder {
+	
+	private Robot robot;
+	
+	public OldRobotBuilder(){
+		this.robot = new Robot();
+	}
+
+	@Override
+	public void buildRobotHead() {
+		robot.setRobotHead("Old Tin Head");
+		
+	}
+
+	@Override
+	public void buildRobotTorso() {
+		robot.setRobotTorso("Old tin torso");
+		
+	}
+
+	@Override
+	public void buildRobotArms() {
+		robot.setRobotArms("Old wooden arms");
+		
+	}
+
+	@Override
+	public void buildRobotLegs() {
+		robot.setRobotLegs("Old wooden legs");
+		
+	}
+
+	@Override
+	public Robot getRobot() {
+		return this.robot;
+	}
+	
+
+}

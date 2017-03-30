@@ -1,0 +1,13 @@
+package EnumSingleton;
+
+public enum EntryNumber {
+	
+	INSTANCE;
+	
+	private int count;
+	
+	public synchronized int getNextEntery(){
+		return count++;
+	}
+
+}

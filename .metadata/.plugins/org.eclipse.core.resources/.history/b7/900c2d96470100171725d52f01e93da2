@@ -1,0 +1,35 @@
+package FactoryMethod;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("WHAT SHIP? ( R / U");
+		Scanner scan = new Scanner(System.in);
+		EnemyShip ship;
+		String option;
+		
+		if(scan.hasNextLine()){
+			option = scan.nextLine();			
+		}
+		
+		if(scan.== "U"){
+			ship = new UFOEnemyShip();
+			displayDetails(ship);
+		} else 
+			if(scan.nextLine()== "R"){
+				ship = new RocketShip();
+				displayDetails(ship);
+		}
+		
+
+	}
+	
+	public static void displayDetails(EnemyShip ship){
+		
+		System.out.println(ship.getName() + " Has " + ship.getDamage() + " damage.");
+	}
+
+}

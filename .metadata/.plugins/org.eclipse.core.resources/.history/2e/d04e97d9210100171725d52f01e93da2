@@ -1,0 +1,21 @@
+package Factories;
+
+public class TelescopeSimpleFactory {
+	
+	public enum Type { ANYSKYTELESCOPE, ANYSKYPLUSTELESCOPE, ANYSUPERSKYTELESCOPE }
+	
+	public TelescopeSimpleFactory(){
+		
+	}
+	
+	
+	public Telescope create(Type type){
+		if (type == Type.ANYSKYPLUSTELESCOPE){
+			return new AnySkyPlusTelescope();
+		} else 
+		if(type == Type.ANYSKYTELESCOPE){
+			return new AnySkyTelescope();	
+		}
+	}
+
+}

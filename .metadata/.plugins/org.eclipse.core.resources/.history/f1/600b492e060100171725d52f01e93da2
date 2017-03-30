@@ -1,0 +1,19 @@
+
+public class WirelessSensorFactory implements ISensorFactory {
+
+	public WirelessSensorFactory(){
+		System.out.println("WIRELESS sensor factory");
+	}
+
+	@Override
+	public IDoorSensor createDoorSensor() {
+		System.out.println("WIRELESS door sensor");
+		return null;
+	}
+
+	@Override
+	public IHeaterSensor createHeaterSensor() {
+		System.out.println("WIRELESS heater sensor");
+		return null;
+	}
+}

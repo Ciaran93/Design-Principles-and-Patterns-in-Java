@@ -1,0 +1,20 @@
+package LabFactMeth;
+
+public class AutoTelescopeFactory extends TelescopeFactory {
+
+	@Override
+	public Telescope createTelescope(String type) {
+		System.out.println(type);
+		if(type.equals("any")){
+			System.out.println("HERE");
+			return new AutoSkyPlusTelescope();
+		} else 
+		if(type.equals("super")){
+			return new AutoSuperSkyTelescope();
+		}
+		else {
+			return new AutoSkyPlusTelescope();
+		}
+	}
+
+}

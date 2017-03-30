@@ -1,0 +1,16 @@
+package Factories;
+
+public class HomeAstronomer {
+
+//	public void start(Telescope localTelescope ) {
+//		System.out.println(localTelescope.showView());
+//	}
+	
+	public enum Type { ANYSKYTELESCOPE, ANYSKYPLUSTELESCOPE}
+	
+	public void start(SkyCoordinates coords, Type type){
+		AnySkyTelescope scope = new AnySkyTelescope();
+		scope.setCoordinates(coords);
+		System.out.println(scope.showView());
+	}
+}

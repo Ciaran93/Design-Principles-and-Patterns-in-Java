@@ -1,0 +1,25 @@
+package LabFactMeth;
+
+import Factories.AnySkyPlusTelescope;
+import Factories.AnySkyTelescope;
+import Factories.AnySuperSkyTelescope;
+import Factories.TelescopeSimpleFactory.Type;
+
+public class AutoTelescopeFactory extends TelescopeFactory {
+
+	@Override
+	public Telescope createTelescope(String type) {
+		
+		if(type.equals(type.equals("any"))){
+			return new AutoSkyPlusTelescope();
+		} else 
+		if(type.equals(Type.ANYSUPERSKYTELESCOPE)){
+			return new AnySuperSkyTelescope();
+		}
+		else {
+			return new AnySkyPlusTelescope();
+		}
+		return null;
+	}
+
+}

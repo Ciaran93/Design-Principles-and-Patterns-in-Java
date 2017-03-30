@@ -1,0 +1,5 @@
+package DerekAbstractFactoryPattern;
+
+public class UFOEnemyShip extends EnemyShip {
+
+}

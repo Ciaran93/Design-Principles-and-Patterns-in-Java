@@ -1,0 +1,14 @@
+package Factories;
+
+public class TelescopeSimpleFactory {
+	
+	public TelescopeSimpleFactory(){
+		
+	}
+	
+	
+	public Telescope create(){
+		
+	}
+
+}

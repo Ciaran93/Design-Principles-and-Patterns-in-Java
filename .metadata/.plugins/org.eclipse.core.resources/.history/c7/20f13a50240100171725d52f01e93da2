@@ -1,0 +1,25 @@
+package Factories;
+
+public class HomeAstronomer {
+
+//	public void start(Telescope localTelescope ) {
+//		System.out.println(localTelescope.showView());
+//	}
+	
+	public enum Type { ANYSKYTELESCOPE, ANYSKYPLUSTELESCOPE}
+	
+	private Telescope scope;
+	
+	public void start(SkyCoordinates coords, Type type){
+		
+		if(type == Type.ANYSKYTELESCOPE){
+			scope = new AnySkyTelescope();
+		}
+		if(type == Type.ANYSKYPLUSTELESCOPE){
+			scope = new AnySkyPlusTelescope();
+		}
+		
+		scope.setCoordinates(coords);
+		System.out.println(scope.showView());
+	}
+}

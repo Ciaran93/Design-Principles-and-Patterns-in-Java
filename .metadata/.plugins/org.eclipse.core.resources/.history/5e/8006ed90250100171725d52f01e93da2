@@ -1,0 +1,13 @@
+package Factories;
+
+public class TelescopeSimpleFactory {
+	
+	public enum Type {ANYSKYTELESCOPE, ANYSKYPLUSTELESCOPE,
+		ANYSUPERSKYTELESCOPE};
+		
+		
+	public Telescope create(Type type){
+		
+	}
+
+}

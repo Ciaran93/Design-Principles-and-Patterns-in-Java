@@ -1,0 +1,21 @@
+package Factories;
+
+public class AnySuperSkyTelescope implements Telescope {
+
+	
+	private String coords;
+	private String view;
+	
+	@Override
+	public void setCoordinates(SkyCoordinates coordinates) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String showView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,24 @@
+package DerekAbstractFactoryPattern;
+
+public abstract class EnemyShip {
+	
+	private String Name;
+	private double Speed;
+	private double Damage;
+	
+	
+	
+	public String getName() {
+		return Name;
+	}
+	public double getSpeed() {
+		return Speed;
+	}
+	public double getDamage() {
+		return Damage;
+	}
+	
+	
+	
+
+}

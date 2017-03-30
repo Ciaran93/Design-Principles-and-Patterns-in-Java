@@ -1,0 +1,8 @@
+
+public class SensorController {
+	
+	public SensorController(ISensorFactory factory){
+		factory.createDoorSensor();
+		factory.createHeaterSensor();
+	}
+}

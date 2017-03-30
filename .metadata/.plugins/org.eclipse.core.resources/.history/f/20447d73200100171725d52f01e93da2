@@ -1,0 +1,9 @@
+package Factories;
+
+public class HomeAstronomer {
+
+	public void start() {
+		Telescope localTelescope = new AnyPlusSkyTelescope();
+		System.out.println(localTelescope.showView());
+	}
+}

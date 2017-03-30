@@ -1,0 +1,7 @@
+
+public class WiredSensorFactory {
+
+	public WiredSensorFactory(){
+		System.out.println("WIRED sensor factory");
+	}
+}
